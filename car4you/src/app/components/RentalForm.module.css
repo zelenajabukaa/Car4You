@@ -1,0 +1,321 @@
+.form {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section {
+    margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.input,
+.select,
+.textarea {
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    outline: none;
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.inputError {
+    border-color: #dc2626;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+/* Category Cards */
+.categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.categoryCard {
+    padding: 1.25rem;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.categoryCard:hover {
+    border-color: #dc2626;
+    transform: translateY(-2px);
+}
+
+.categoryCardActive {
+    border-color: #dc2626;
+    background: #fef2f2;
+}
+
+.categoryName {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.categoryExample {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-bottom: 0.75rem;
+}
+
+.categoryPrice {
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Radio Buttons */
+.radioGroup {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.radioLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    accent-color: #dc2626;
+}
+
+/* Extras */
+.extrasGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0.75rem;
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkboxLabel:hover {
+    background: #f9fafb;
+}
+
+.checkbox {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 0.75rem;
+    cursor: pointer;
+    accent-color: #dc2626;
+}
+
+.checkboxText {
+    flex: 1;
+}
+
+.extraPrice {
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Slider */
+.slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #d1d5db;
+    outline: none;
+    cursor: pointer;
+    accent-color: #dc2626;
+}
+
+.sliderLabels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+/* Priority Grid */
+.priorityGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+}
+
+.radioCard {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.radioCard:hover {
+    background: #f9fafb;
+}
+
+/* Textarea */
+.textarea {
+    resize: none;
+    font-family: inherit;
+}
+
+.charCount {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+/* Price Box */
+.priceBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.priceLabel {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.priceAmount {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #dc2626;
+}
+
+/* Submit Button */
+.submitBtn {
+    width: 100%;
+    padding: 1.25rem;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submitBtn:hover {
+    background: #b91c1c;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .form {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .categoryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .extrasGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .priorityGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .priceBox {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .categoryGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .priorityGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .radioGroup {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
